@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+ <html>
+	 <head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<!--Google Icon Font-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!--Materialize css-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="./css/style.css"/>
+	 </head>
+
+	 <body>
+
+		<!--Logo-->
+		<div class="logo">
+			<img src="image/7.jpg">
+			<span><a href="Home.html" class="brand-logo">Info.<span style="color: rgb(185,188,200)">Market</span></a></span>
+		</div>
+
+
+		<!--Navbar-->
+		<nav>
+			<div class="nav-wrapper">
+				<a href="#" data-target='mobile-demo' class="sidenav-trigger"><i class="material-icons">menu</i></a>
+				<ul class="left hide-on-med-and-down">
+					<li class="waves-effect"><a href="Home.html">Home</a></li>
+					<li class="waves-effect"><a href="#" class="dropdown-trigger" data-target='dropdown'>World<i class="material-icons right">arrow_drop_down</i></a></li>
+					<li class="waves-effect"><a href="#" class="dropdown-trigger" data-target='dropdown'>History<i class="material-icons right">arrow_drop_down</i></a></li>
+					<li class="waves-effect"><a href="#" class="dropdown-trigger" data-target='dropdown'>People<i class="material-icons right">arrow_drop_down</i></a></li>
+					<li class="waves-effect"><a href="#" class="dropdown-trigger" data-target='dropdown'>Calender & Holidays<i class="material-icons right">arrow_drop_down</i></a></li>
+					<li class="waves-effect"><a href="#">About</a></li>
+					<li class="waves-effect"><a href="#">Contact</a></li>
+				</ul>
+        <ul class="right" style="margin-right:15px;">
+          <li class="waves-effect active"><a href="SearchCountry.html">Country Information</a></li>
+        </ul>
+				<ul class="sidenav" id="mobile-demo">
+					<li><a href="Home.html">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">World</a></li>
+					<li><a href="#">History</a></li>
+					<li><a href="#">People</a></li>
+					<li><a href="#">Calender & Holidays</a></li>
+				</ul>
+			</div>
+		</nav>
+
+	<!--Container-->
+    <div class="container">
+	<br><br><br>
+
+      <div class="card-panel" id="searchCard" style="background-color:none;">
+         <label for="countryName">Please enter a country name : </label>
+          <br><br>
+
+              <div class="input-field">
+                <input type="text" id="countryName">
+                <label class="active" for="name">Country Name</label>
+              </div>
+          <div class="btn right" name="Find" id="btnFind" value="Find"><i class="material-icons left">search</i>Search</div>
+
+       </div>
+       <br><br>
+
+    <div id="numOfResult"></div>
+    <div id="result"></div>
+
+
+	<!--Footer-->
+    <div class="footer">
+		<p>Contact Us</p>
+		<hr align="left" color="grey" width="160px" style="position:relative; top:50px; left:35px;">
+
+		<br><br>
+
+		<div class="social-media">
+			<div style="position:relative;top:8px;">
+				<i class="fa fa-envelope"></i>
+				<i class="fa fa-phone-square"></i>
+				<i class="fa fa-google-plus-square"></i>
+				<i class="fa fa-instagram"></i>
+				<i class="fa fa-telegram"></i>
+			</div>
+		</div>
+	</div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <script type="text/javascript" src="./js/code.js"></script>
+  </body>
+ </html>
